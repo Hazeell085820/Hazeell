@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Eh Beneran Dipencet 😳</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, green, black);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    button {
+      padding: 15px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 25px;
+      background-color: darkgreen;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    #konten {
+      display: none;
+    }
+
+    img {
+      max-width: 80%;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      color: white;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <button id="tombol" onclick="muncul()">serius pencet ini?</button>
+
+  <div id="konten">
+    <h2>aal gantenks</h2>
+    <img src="fah.jpg" alt="gambar">
+    <audio id="lagu" src="fah.mp3"></audio>
+  </div>
+
+  <script>
+    function muncul() {
+      document.getElementById("tombol").style.display = "none";
+      document.getElementById("konten").style.display = "block";
+      document.getElementById("lagu").play();
+    }
+  </script>
+
+</body>
+</html>
